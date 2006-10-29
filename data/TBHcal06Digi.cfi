@@ -5,7 +5,7 @@
    #
    include "CalibCalorimetry/EcalTrivialCondModules/data/EcalTrivialCondRetriever.cfi"
  
-   include "CalibCalorimetry/HcalPlugins/data/hardwired_conditions.cfi"
+   include "SimCalorimetry/HcalTestBeam/data/hardwired_conditions.cfi"
 
    # unsuppressed digi's
 

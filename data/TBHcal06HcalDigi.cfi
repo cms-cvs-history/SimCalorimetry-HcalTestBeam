@@ -8,8 +8,8 @@
 	untracked double amplifierGainTBHE       = 0.3305
 	untracked double amplifierGainTBHO       = 0.3065
 	untracked double samplingFactorTBHB      = 117.0
-	untracked double samplingFactorTBHB      = 178.0
-	untracked double samplingFactorTBHB      = 217.0
+	untracked double samplingFactorTBHE      = 178.0
+	untracked double samplingFactorTBHO      = 217.0
 	untracked double timePhaseTBHB           = 5
 	untracked double timePhaseTBHE           = 5
 	untracked double timePhaseTBHO           = 5
