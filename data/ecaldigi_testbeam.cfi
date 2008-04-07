@@ -1,3 +1,5 @@
+include "RecoTBCalo/EcalTBTDCReconstructor/data/Ecal2004TBTDCRanges.cff"
+
 module ecalUnsuppressedDigis = EcalTBDigiProducer {
   double simHitToPhotoelectronsBarrel = 2250.
   double simHitToPhotoelectronsEndcap = 1800.
@@ -14,7 +16,7 @@ module ecalUnsuppressedDigis = EcalTBDigiProducer {
   double ConstantTerm = 0.003
   untracked string EcalTBInfoLabel = "simCaloTB"
   bool doReadout = true
-  include "RecoTBCalo/EcalTBTDCReconstructor/data/Ecal2004TBTDCRanges.cff"
+  using Ecal2004TBTDCRangesBlock
   double tunePhaseShift = 0.5
 #  vdouble CorrelatedNoiseMatrix = { 1.00, 0.67, 0.53, 0.44, 0.39, 0.36, 0.38, 0.35, 0.36, 0.32,
 #                                    0.67, 1.00, 0.67, 0.53, 0.44, 0.39, 0.36, 0.38, 0.35, 0.36,
