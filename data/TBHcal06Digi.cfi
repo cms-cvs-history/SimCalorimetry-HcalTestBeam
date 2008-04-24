@@ -20,4 +20,4 @@
 	int32 bunchspace = 25
    }
 
-   sequence doAllDigi = { mix, ecalUnsuppressedDigis, hcalDigis }
+   sequence doAllDigi = { mix, simEcalUnsuppressedDigis, simHcalDigis }

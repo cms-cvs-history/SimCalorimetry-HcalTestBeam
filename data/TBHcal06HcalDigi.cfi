@@ -1,4 +1,4 @@
-  module hcalDigis = HcalTBDigiProducer {
+  module simHcalDigis = HcalTBDigiProducer {
 	bool doTimeSlew                          = true
 	bool doNoise                             = false
 	untracked double photomultiplierGainTBHB = 2000.
