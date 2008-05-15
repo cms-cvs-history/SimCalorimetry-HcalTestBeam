@@ -1,3 +1,0 @@
-   es_module = EcalBarrelGeometryEP {}
-   es_module = HcalDDDGeometryEP {}
-   es_module = CaloGeometryBuilder {}
