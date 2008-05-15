@@ -1,9 +1,0 @@
-	# Test Beam ECAL specific MC info
-
-	module simCaloTB = EcalTBMCInfoProducer {
-		FileInPath CrystalMapFile = "Geometry/EcalTestBeam/data/BarrelSM1CrystalCenterElectron120GeV.dat"
-		untracked string moduleLabelVtx = "source"
-		using common_beam_direction_parameters
-	}
-
-	sequence doSimTB     = { simCaloTB }
