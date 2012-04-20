@@ -22,9 +22,9 @@ HcalTBDigiProducer::HcalTBDigiProducer(const edm::ParameterSet& ps, edm::EDProdu
   theAmplifier(0), theCoderFactory(0), theElectronicsSim(0), 
   theHitCorrection(0), theHBHEDigitizer(0), theHODigitizer(0), theHBHEHits(),
   theHOHits(), thisPhaseShift(0) {
-  
-  mixMod.produces<HBHEDigiCollection>();
-  mixMod.produces<HODigiCollection>();
+  std::string const instance("simHcalDigis");
+  mixMod.produces<HBHEDigiCollection>(instance);
+  mixMod.produces<HODigiCollection>(instance);
 
   DetId detId(DetId::Hcal, 1);
   bool syncPhase = (theParameterMap->simParameters(detId)).syncPhase();
@@ -146,8 +146,9 @@ void HcalTBDigiProducer::finalizeEvent(edm::Event& e, const edm::EventSetup& eve
   edm::LogInfo("HcalSim") << "HcalTBDigiProducer: HO digis   : " << hoResult->size();
 
   // Step D: Put outputs into event
-  e.put(hbheResult);
-  e.put(hoResult);
+  std::string const instance("simHcalDigis");
+  e.put(hbheResult, instance);
+  e.put(hoResult, instance);
 
 }
 
